@@ -93,6 +93,10 @@ body {
 }
 .description__input__text-area.active {
   border: 1px solid #f00;
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 12px;
+  background-position-x: calc(100% - 95px);
 }
 .description__input__text-area::placeholder {
   color: #ce9797;
