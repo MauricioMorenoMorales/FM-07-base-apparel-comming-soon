@@ -1,0 +1,59 @@
+@import './_reset-styles.styl'
+@import './_tokens.styl'
+
+html
+	font-family ffPrimary
+	background linearWhite
+	min-height 100vh
+
+.header
+	height 100px
+	display flex
+	align-items center
+	&__image
+		margin-left 30px
+
+.hero
+	width 100%
+	&__image
+		width 100%
+		height auto
+
+.description
+	text-align center
+	padding 30px
+	&__title
+		font-size 4rem
+		text-transform uppercase
+		color darkGrayishRed
+		letter-spacing 10px
+		max-width 400px
+		margin 0 auto
+		&--desaturated
+			font-size 4rem
+			text-transform uppercase
+			color desaturatedRed
+			font-weight 300
+			letter-spacing 10px
+			margin-bottom 0
+	&__text
+		color desaturatedRed
+	&__input
+		text-align start
+		position relative
+		padding-top 5px
+		&__text-zone
+			height 50px
+			width 100%
+			border-radius 50px
+			border 1px desaturatedRed solid
+		&__button
+			position absolute
+			width 70px
+			height 52px
+			background linearDesaturatedRed
+			border none
+			border-radius 50px
+			box-shadow shadow
+			right 0
+			margin-top -1px

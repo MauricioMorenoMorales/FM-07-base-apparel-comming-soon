@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+  font-family: FontFamilyBody;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient(#fff, #fff5f5);
+  min-height: 100vh;
+}
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.header__image {
+  margin-left: 30px;
+}
+.hero {
+  width: 100%;
+}
+.hero__image {
+  width: 100%;
+  height: auto;
+}
+.description {
+  text-align: center;
+  padding: 30px;
+}
+.description__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #413a3a;
+  letter-spacing: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.description__title--desaturated {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ce9797;
+  font-weight: 300;
+  letter-spacing: 10px;
+  margin-bottom: 0;
+}
+.description__text {
+  color: #ce9797;
+}
+.description__input {
+  text-align: start;
+  position: relative;
+  padding-top: 5px;
+}
+.description__input__text-zone {
+  height: 50px;
+  width: 100%;
+  border-radius: 50px;
+  border: 1px #ce9797 solid;
+}
+.description__input__button {
+  position: absolute;
+  width: 70px;
+  height: 52px;
+  background: linear-gradient(#f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 14px 17px 31px 0px rgba(180,180,180,0.75);
+  right: 0;
+  margin-top: -1px;
+}
