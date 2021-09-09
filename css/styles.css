@@ -73,12 +73,21 @@ html {
   text-align: start;
   position: relative;
   padding-top: 5px;
+  margin-bottom: 100px;
 }
-.description__input__text-zone {
+.description__input__text-area {
   height: 50px;
   width: 100%;
   border-radius: 50px;
-  border: 1px #ce9797 solid;
+  border: none;
+  border: 1px solid #ce9797;
+  padding-left: 15px;
+  outline: none;
+  font-size: 2rem;
+  color: #413a3a;
+}
+.description__input__text-area::placeholder {
+  color: #ce9797;
 }
 .description__input__button {
   position: absolute;
@@ -90,4 +99,14 @@ html {
   box-shadow: 14px 17px 31px 0px rgba(180,180,180,0.75);
   right: 0;
   margin-top: -1px;
+}
+.description__input__error-message {
+  font-size: 1.4rem;
+  margin-top: 4px;
+  margin-left: 20px;
+  color: #f00;
+  display: none;
+}
+.description__input__error-message.active {
+  display: block;
 }
