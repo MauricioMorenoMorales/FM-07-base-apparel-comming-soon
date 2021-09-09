@@ -58,11 +58,14 @@ body
 			font-size 2rem
 			color darkGrayishRed
 			background-color linearWhite
+			&.active
+				border 1px solid red
 			&::placeholder
 				color desaturatedRed
 		&__button
 			position absolute
-			width 70px
+			width 90px
+			cursor pointer
 			height 52px
 			background linearDesaturatedRed
 			border none
@@ -70,6 +73,10 @@ body
 			box-shadow shadow
 			right 0
 			margin-top -1px
+			transition .3s
+			&:hover
+				background lighten(softRed, 70%)
+				transform scale(1.05)
 		&__error-message
 			font-size 1.4rem
 			margin-top 4px
@@ -109,7 +116,11 @@ body
 	background-position bottom right
 	&__title
 		margin 0
-		font-size 5rem
-		margin-bottom 50px
+		font-size 6rem
+		margin-bottom 40px
 		&--desaturated
-			font-size 5rem
+			font-size 6rem
+	&__text
+		font-size 2rem
+		line-height 3rem
+		margin-bottom 20px
