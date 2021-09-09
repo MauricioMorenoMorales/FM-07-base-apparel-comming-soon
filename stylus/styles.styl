@@ -6,6 +6,10 @@ html
 	background linearWhite
 	min-height 100vh
 
+body
+	max-width 550px
+	margin 0 auto
+
 .header
 	height 100px
 	display flex
@@ -53,6 +57,7 @@ html
 			outline none
 			font-size 2rem
 			color darkGrayishRed
+			background-color linearWhite
 			&::placeholder
 				color desaturatedRed
 		&__button
@@ -73,3 +78,38 @@ html
 			display none
 			&.active
 				display block
+
+@media screen and (min-width 1000px)
+	body
+		display grid
+		max-width 100%
+		min-height 100vh
+		grid-template-columns 1fr 40%
+		grid-template-rows 100px 1fr
+		grid-template-areas:  "header  hero"\
+													"content hero";
+
+.header
+	padding 0 20%
+	&__image
+		margin 0
+
+.hero
+	grid-area hero
+	&__image
+		min-height 100vh
+		object-fit cover
+
+.description
+	text-align start
+	margin-top 50px
+	padding 0 20%
+	background-image url('../images/bg-pattern-desktop.svg')
+	background-repeat no-repeat
+	background-position bottom right
+	&__title
+		margin 0
+		font-size 5rem
+		margin-bottom 50px
+		&--desaturated
+			font-size 5rem
